@@ -5,3 +5,8 @@ provider "aws" {
 resource "aws_iam_user" "Tim" {
   name = "Tim"
 }
+
+resource "aws_iam_group" "developers" {
+  name = "developers"
+  path = "/"
+}
