@@ -17,14 +17,4 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_instance" "web2" {
-  ami                         = "ami-02354e95b39ca8dec"
-  instance_type               = "t2.micro"
-  tags = {
-    Name       = "Hello World"
-    Env        = "Development"
-    Client     = "panera_bread"
-    Team       = "DeVops"
-    Created_by = "Shokhrukh"
-  }
-}
+
