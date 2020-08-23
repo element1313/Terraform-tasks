@@ -6,4 +6,5 @@ resource "aws_instance" "web" {
   key_name      = "${aws_key_pair.task.key_name}"
   user_data     = "${file("userdata.sh")}"
   vpc_security_group_ids  = ["${aws_security_group.allow_ssh.id}"]
+  availability_zone = "us-east-1a"
 }
